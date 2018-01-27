@@ -1,0 +1,19 @@
+{
+  "name": "ir_manager",
+  "version": "1.0.0",
+  "description": "IR service manager for BTO IR Advanced",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkanekiyo/ir_manager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tkanekiyo/ir_manager/issues"
+  },
+  "homepage": "https://github.com/tkanekiyo/ir_manager#readme"
+}
