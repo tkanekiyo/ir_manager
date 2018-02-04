@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/tkanekiyo/ir_manager/issues"
   },
-  "homepage": "https://github.com/tkanekiyo/ir_manager#readme"
+  "homepage": "https://github.com/tkanekiyo/ir_manager#readme",
+  "dependencies": {
+    "firebase": "^4.9.0",
+    "wol": "^1.0.3"
+  }
 }

@@ -1,4 +1,8 @@
 var firebase = require("firebase");
+var wol = require("wol");
+
+// PC MAC address
+var pc_mac = "94:de:80:c5:53:09";
 
 // firebase config
 var config = {
@@ -52,6 +56,17 @@ db.ref(db_path).on("value", function(changedSnapshot) {
 		    "default": false
 		});
 		return option ? command + data_path + "heater_" + option + ".txt": option;
+	    },
+	    //PC
+	    "pc": () => {
+		const command = "echo Wake on RABIT";
+		const wake = () => wol.wake(pc_mac);
+		wol.wake(pc_mac);
+		const option = getJsonData(value.split(" ")[1], {
+		    "on": wake,
+		    "default": false
+		});
+		return null;
 	    },
 	    //template
 	    "xxx": () => {
